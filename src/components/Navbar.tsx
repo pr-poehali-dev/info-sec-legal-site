@@ -25,17 +25,17 @@ const Navbar = () => {
               Главная
             </Link>
             <Link to="/security" className="text-gray-700 hover:text-securityBlue transition-colors">
-              Безопасность
+              Информационная безопасность
             </Link>
             <Link to="/law" className="text-gray-700 hover:text-lawPurple transition-colors">
-              Право
+              Информационное право
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-securityBlue transition-colors">
-              О нас
+            <Link to="/threats" className="text-gray-700 hover:text-red-500 transition-colors">
+              Угрозы
             </Link>
-            <Button className="bg-securityBlue hover:bg-securityBlue/90">
-              Консультация
-            </Button>
+            <Link to="/experts" className="text-gray-700 hover:text-green-600 transition-colors">
+              Эксперты
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,25 +62,29 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-securityBlue transition-colors px-4 py-2 rounded-md hover:bg-gray-100"
                 onClick={toggleMenu}
               >
-                Безопасность
+                Информационная безопасность
               </Link>
               <Link 
                 to="/law" 
                 className="text-gray-700 hover:text-lawPurple transition-colors px-4 py-2 rounded-md hover:bg-gray-100"
                 onClick={toggleMenu}
               >
-                Право
+                Информационное право
               </Link>
               <Link 
-                to="/about" 
-                className="text-gray-700 hover:text-securityBlue transition-colors px-4 py-2 rounded-md hover:bg-gray-100"
+                to="/threats" 
+                className="text-gray-700 hover:text-red-500 transition-colors px-4 py-2 rounded-md hover:bg-gray-100"
                 onClick={toggleMenu}
               >
-                О нас
+                Угрозы
               </Link>
-              <Button className="bg-securityBlue hover:bg-securityBlue/90 mx-4">
-                Консультация
-              </Button>
+              <Link 
+                to="/experts" 
+                className="text-gray-700 hover:text-green-600 transition-colors px-4 py-2 rounded-md hover:bg-gray-100"
+                onClick={toggleMenu}
+              >
+                Эксперты
+              </Link>
             </div>
           </div>
         )}
